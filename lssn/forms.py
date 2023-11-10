@@ -38,9 +38,6 @@ class UserAdminChangeForm(forms.ModelForm):
         fields = ('email', 'name', 'surname', 'password', 'is_active', 'is_superuser')
 
     def clean_password(self):
-        # Regardless of what the user provides, return the initial value.
-        # This is done here, rather than on the field, because the
-        # field does not have access to the initial value
         return self.initial["password"]
 
 

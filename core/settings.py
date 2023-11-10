@@ -73,6 +73,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 AUTH_USER_MODEL = "lssn.MyUser"
 
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
